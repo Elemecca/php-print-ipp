@@ -19,8 +19,7 @@ namespace Elemecca\PrintIpp\Encoding;
 
 use PHPUnit\Framework\TestCase;
 
-final class BinaryConverterTest
-extends TestCase
+final class BinaryConverterTest extends TestCase
 {
     public function byteProvider()
     {

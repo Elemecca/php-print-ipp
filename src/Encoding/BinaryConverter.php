@@ -92,7 +92,9 @@ final class BinaryConverter
         if ($value < self::BYTE_MIN || $value > self::BYTE_MAX) {
             throw new \DomainException(sprintf(
                 "byte values must be between %d and %d, got %d",
-                self::BYTE_MIN, self::BYTE_MAX, $value
+                self::BYTE_MIN,
+                self::BYTE_MAX,
+                $value
             ));
         }
 
@@ -114,7 +116,9 @@ final class BinaryConverter
         if ($value < self::SHORT_MIN || $value > self::SHORT_MAX) {
             throw new \DomainException(sprintf(
                 "short values must be between %d and %d, got %d",
-                self::SHORT_MIN, self::SHORT_MAX, $value
+                self::SHORT_MIN,
+                self::SHORT_MAX,
+                $value
             ));
         }
 
@@ -136,7 +140,9 @@ final class BinaryConverter
         if ($value < self::INT_MIN || $value > self::INT_MAX) {
             throw new \DomainException(sprintf(
                 "int values must be between %d and %d, got %d",
-                self::INT_MIN, self::INT_MAX, $value
+                self::INT_MIN,
+                self::INT_MAX,
+                $value
             ));
         }
 
