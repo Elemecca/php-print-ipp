@@ -1,0 +1,18 @@
+{
+    "name": "elemecca/print-ipp",
+    "description": "Internet Printing Protocol client",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sam Hanes",
+            "email": "sam@maltera.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Elemecca\\PrintIpp\\": "src/"
+        }
+    },
+    "require": {}
+}
