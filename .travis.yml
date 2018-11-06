@@ -1,0 +1,15 @@
+dist: trusty
+sudo: false
+
+language: php
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+
+install:
+  - composer install
+
+script:
+  - php vendor/bin/phpcs -q
+  - php vendor/bin/phpunit

@@ -1,5 +1,7 @@
 # IPP Client for PHP
 
+[![Build Status](https://travis-ci.com/Elemecca/php-print-ipp.svg?branch=master)](https://travis-ci.com/Elemecca/php-print-ipp)
+
 print-ipp is a modern IPP (Internet Printing Protocol, [RFC 8011][8011])
 client for PHP focused on printing rather than printer administration.
 
