@@ -158,6 +158,7 @@ final class BinaryConverter
         );
     }
 
+    /** @codeCoverageIgnore */
     private function __construct()
     {
     }

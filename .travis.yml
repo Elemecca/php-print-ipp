@@ -10,6 +10,15 @@ php:
 install:
   - composer install
 
+before_script:
+  # create directory for coverage reports
+  - mkdir -p build/logs
+
 script:
   - php vendor/bin/phpcs -q
-  - php vendor/bin/phpunit
+  - php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+  # upload coverage reports to Coveralls
+  - travis_retry wget -q https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
+  - travis_retry php php-coveralls.phar
